@@ -1,0 +1,44 @@
+gcc -ggdb -Wall -pedantic -std=gnu99 -O3    matrixMultiply.c   -o matrixMultiply
+gcc -o matrixMultiply -ggdb -Wall -pedantic -std=gnu99 -O3 matrixMultiply.c./matrixMultiply
+Running Part A...
+
+n = 10, 0.667 Gflop/s
+n = 14, 0.915 Gflop/s
+n = 19, 0.980 Gflop/s
+n = 26, 0.976 Gflop/s
+n = 35, 1.021 Gflop/s
+n = 47, 1.033 Gflop/s
+n = 63, 1.042 Gflop/s
+n = 85, 0.968 Gflop/s
+n = 114, 0.960 Gflop/s
+n = 153, 0.997 Gflop/s
+n = 205, 1.032 Gflop/s
+n = 274, 1.508 Gflop/s
+n = 366, 1.415 Gflop/s
+n = 489, 1.254 Gflop/s
+n = 653, 0.887 Gflop/s
+n = 871, 0.247 Gflop/s 				huge drop here
+n = 1000, 0.222 Gflop/s
+
+
+./matrixMultiply 2
+Running Part B...
+
+ijk:	n = 1000, 0.212 Gflop/s
+ikj:	n = 1000, 0.102 Gflop/s 	worst(inner loop j)
+jik:	n = 1000, 0.218 Gflop/s
+jki:	n = 1000, 1.315 Gflop/s 	best(inner loop i)
+kij:	n = 1000, 0.101 Gflop/s 	worst(inner loop j)
+kji:	n = 1000, 1.683 Gflop/s 	best(inner loop i)
+
+
+Why does Gflop/s performance drop for large values of n?
+
+Gflop/s = computation/sec
+When cache cannot hold the entire matrix, there will be misses every line, thus miss penalty.
+
+The second run of matrixMultiply runs all 6 different loop orderings. Which ordering(s) perform best for 1000-by-1000 matrices? Which ordering(s) perform the worst? How does the way we stride through the matrices with respect to the innermost loop affect performance?
+
+When inner loop is i, increment 1 each time, you are not jumping around inside the matrix.
+When inner loop is j, increment n each time, a lot of jumping.
+When inner loop is k, not changing anything.

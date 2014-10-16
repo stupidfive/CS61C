@@ -1,0 +1,12 @@
+block size 				time ms
+
+2-by-2 					27.347 			worst
+33-by-33 				18.628
+100-by-100 				12.135
+200-by-200 				11.78
+400-by-400 				11.583 			best
+1000-by-1000 			43.396
+
+
+Note:
+Time difference may not be obvious if the cache size of your computer is big. Run with small cache if possible.
