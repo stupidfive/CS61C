@@ -1,0 +1,20 @@
+1.  
+ .data: subsequent items stored in the next available address
+ .word: store the listed values as 32 bit words
+ .text: subsequent items are saved in the text segment of the machine
+2. 
+  save the address of the label to the variable $t3
+3. 
+  Check the box in under execute tab after assemble
+4. 
+  Type go button or press F5
+5. 
+  34
+6.
+  $t3
+7.
+  change the corresponding value of $t3 to 13 and the output is 233.
+8.
+  choose the break point right after the la command and store 13 to the address
+9.
+  syscall return the control of the register back to the operating system.
