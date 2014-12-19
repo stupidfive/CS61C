@@ -1,0 +1,44 @@
+original:
+ 1 thread(s) took 2.101082 seconds
+ 2 thread(s) took 10.845880 seconds
+ 3 thread(s) took 22.199783 seconds
+ 4 thread(s) took 36.185071 seconds
+ 5 thread(s) took 38.568145 seconds
+ 6 thread(s) took 48.093497 seconds
+
+ global_sum:
+  1 thread(s) took 0.170040 seconds
+ 2 thread(s) took 0.081525 seconds
+ 3 thread(s) took 0.051962 seconds
+ 4 thread(s) took 0.042822 seconds
+ 5 thread(s) took 0.031222 seconds
+ 6 thread(s) took 0.028436 seconds
+ 7 thread(s) took 0.023935 seconds
+ 8 thread(s) took 0.036837 seconds
+ 9 thread(s) took 0.035044 seconds
+ 10 thread(s) took 0.034626 seconds
+ 11 thread(s) took 0.037247 seconds
+ 12 thread(s) took 0.027828 seconds
+ 13 thread(s) took 0.025118 seconds
+ 14 thread(s) took 0.021475 seconds
+ 15 thread(s) took 0.019734 seconds
+ 16 thread(s) took 0.018243 seconds
+
+ reduction:
+ 1 thread(s) took 0.170258 seconds
+ 2 thread(s) took 0.078950 seconds
+ 3 thread(s) took 0.050740 seconds
+ 4 thread(s) took 0.047673 seconds
+ 5 thread(s) took 0.030720 seconds
+ 6 thread(s) took 0.031131 seconds
+ 7 thread(s) took 0.034068 seconds
+ 8 thread(s) took 0.029996 seconds
+ 9 thread(s) took 0.030169 seconds
+ 10 thread(s) took 0.028628 seconds
+ 11 thread(s) took 0.025626 seconds
+ 12 thread(s) took 0.024187 seconds
+ 13 thread(s) took 0.021410 seconds
+ 14 thread(s) took 0.020468 seconds
+ 15 thread(s) took 0.018520 seconds
+ 16 thread(s) took 0.017236 seconds
+ 
